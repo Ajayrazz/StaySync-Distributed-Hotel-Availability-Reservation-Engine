@@ -1,0 +1,44 @@
+# Git ignore for Spring Boot project
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+.mvn/repository
+
+# IDE
+.idea/
+*.iml
+.eclipse/
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Logs
+*.log
+logs/
+spring.log
+
+# Application secrets (never commit real credentials)
+application-prod.yml
+application-secrets.yml
+*.env
+.env
+
+# Docker volumes (not code)
+postgres_data/
+redis_data/
+kafka_data/
